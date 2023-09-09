@@ -2,34 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-
 # Project Info
-https://github.com/arjunyel/angular-spacex-graphql-codegen
-Differences:
+This project was created following instructions from https://github.com/arjunyel/angular-spacex-graphql-codegen
+
+## Differences from base project:
 - `https://api.spacex.land/graphql/` no longer operational; using `https://spacex-production.up.railway.app/` instead
-- from Angular version 16.2.1: `ng g component launch-list --changeDetection=OnPush` => `ng g component launch-list --change-detection=OnPush`
-- spacexGraphql.service.ts codegen: `override` was not added to document
-- had to put a bunch of optional chaining in launch-list html because every field was optional
+- difference in command in Angular version 16.2.1: `ng g component launch-list --changeDetection=OnPush` => `ng g component launch-list --change-detection=OnPush`
+- spacexGraphql.service.ts codegen: `override` was not added to document, had to add manually
+- had to add optional chaining for every field and subfield in launch-list & launch-details html because every field is optional in the new API
+
+## End Result
+### Launch List page
+![img](screenshots/launch-list.PNG)
+### Launch Details page
+![img](screenshots/launch-details.PNG)
