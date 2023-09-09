@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
 # Project Info
-This project was created following instructions from https://github.com/arjunyel/angular-spacex-graphql-codegen
+This project was created following instructions from https://github.com/arjunyel/angular-spacex-graphql-codegen and video [ GraphQL Basics - Build an app with the SpaceX API ](https://www.youtube.com/watch?v=7wzR4Ig5pTI)
 
 ## Differences from base project:
 - `https://api.spacex.land/graphql/` no longer operational; using `https://spacex-production.up.railway.app/` instead
