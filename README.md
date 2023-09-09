@@ -31,3 +31,5 @@ https://github.com/arjunyel/angular-spacex-graphql-codegen
 Differences:
 - `https://api.spacex.land/graphql/` no longer operational; using `https://spacex-production.up.railway.app/` instead
 - from Angular version 16.2.1: `ng g component launch-list --changeDetection=OnPush` => `ng g component launch-list --change-detection=OnPush`
+- spacexGraphql.service.ts codegen: `override` was not added to document
+- had to put a bunch of optional chaining in launch-list html because every field was optional
