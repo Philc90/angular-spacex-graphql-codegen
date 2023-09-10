@@ -11,6 +11,9 @@ This project was created following instructions from https://github.com/arjunyel
 - spacexGraphql.service.ts codegen: `override` was not added to document, had to add manually
 - had to add optional chaining for every field and subfield in launch-list & launch-details html because every field is optional in the new API
 
+## API info
+https://studio.apollographql.com/public/SpaceX-pxxbxen
+
 ## End Result
 ### Launch List page
 ![img](screenshots/launch-list.PNG)
